@@ -2,7 +2,7 @@ import { fetchWithRotation, normalizeDramaUrl, sanitizeResponse } from "./_melol
 
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "public, s-maxage=60, stale-while-revalidate=300");
-  const data = await fetchWithRotation("/drama/melolo");
+  const data = await fetchWithRotation("/drama/melolo/home");
 
   if (data && Array.isArray(data.data)) {
     data.data = data.data.map((item) => ({
