@@ -8,6 +8,9 @@ import {
   Heart,
   Share2,
   Activity,
+  Github,
+  Send,
+  Instagram,
 } from "lucide-react";
 import AppLayout from "../components/AppLayout.jsx";
 import GlassCard from "../components/GlassCard.jsx";
@@ -220,7 +223,52 @@ export default function Profile() {
           <span>Routing</span><span className="text-ink">React Router DOM</span>
           <span>Styling</span><span className="text-ink">Tailwind CSS</span>
           <span>Backend</span><span className="text-ink">Vercel Serverless</span>
-          <span>Developer</span><span className="text-ink">—</span>
+          <span>Developer</span><span className="text-ink">R_hmt ofc</span>
+        </div>
+      </GlassCard>
+
+      {/* Developer card — brief identity */}
+      <GlassCard className="mt-4 p-4">
+        <div className="flex items-center gap-3">
+          <img
+            src="/pp-dev.png"
+            alt="R_hmt ofc"
+            loading="lazy"
+            className="h-12 w-12 rounded-full object-cover border border-[rgba(255,138,31,0.45)] shadow-[0_0_18px_rgba(255,138,31,0.25)]"
+          />
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold">R_hmt ofc</p>
+            <p className="text-xs text-ink-muted">Self-taught Web Developer</p>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <a
+              href="https://github.com/rahmat-369"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              className="grid h-8 w-8 place-items-center rounded-full glass hover:bg-white/10"
+            >
+              <Github size={14} className="text-ink/80" />
+            </a>
+            <a
+              href="https://www.instagram.com/rahmt_nhw"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="grid h-8 w-8 place-items-center rounded-full glass hover:bg-white/10"
+            >
+              <Instagram size={14} className="text-ink/80" />
+            </a>
+            <a
+              href="https://t.me/rAi_engine"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Telegram"
+              className="grid h-8 w-8 place-items-center rounded-full glass hover:bg-white/10"
+            >
+              <Send size={14} className="text-ink/80" />
+            </a>
+          </div>
         </div>
       </GlassCard>
 
